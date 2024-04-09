@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 110px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content:center ;
+    #container {
+        padding-left:15px;
+        padding-right: 15px;
+        width: 92%;
+        height: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logoBox {
+            cursor: pointer;
+        }
+        #menu {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          ul {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            li {
+                list-style-type: none;
+                cursor: pointer;
+            }
+          }  
+
+          ////////
+          
+        }
+        #iconBox {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    #searchBox {
+        width: 8%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	Fires when a user releases a key, initial-scale=1.0">
+    <title>Stroage</title>
+</head>
+<body>
+    <button id="send">Gonder</button>
+    <h1>Ramzi Mammadli</h1>
+    <p id="status">status</p>
+    <button id="fetchData">Adi gor</button>
+    <p id="text"></p>
+
+    <script>
+
+        const send = document.getElementById("send")
+        const status = document.getElementById("status")
+        const fetchData = document.getElementById("fetchData")
+        const text = document.getElementById("text")
+
+        let adSoyad ="Ramzi Mammadli";
+        function sendData() {
+            localStorage.setItem("user", JSON.stringify(adSoyad));
+            status.innerHTML= 'AD gonderildi';
+        }
+
+        send.addEventListener("click", sendData);
+        function lookData() {
+            let user =JSON.parse(localStorage.getItem("user"));
+            text.innerHTML =user; }
+            fetchData.addEventListener("click", lookData);
+    </script>
+</body>
+</html>

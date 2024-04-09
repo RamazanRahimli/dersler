@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+#fashionSaleBox {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image:url('../../../assets/IMAGE/hero.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        min-height: 500px;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .writeBox {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h5 {
+                font-size: 45px;
+                font-weight:300;
+                color: red;
+                font-family: "Clicker Script", cursive;
+            }
+            h3 {
+                font-size: 40px;
+                display: flex;
+                gap: 10px;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-family: "Jost", sans-serif;
+            }
+            button {
+                padding:15px 40px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+            }
+            .fashionSaleLorem {
+                width: 75%;
+                align-self: center;
+                text-align: center;
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    #fashionSaleBox {
+        min-height: 90vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        .container {
+            width: 100%;
+            .writeBox {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+   
+}

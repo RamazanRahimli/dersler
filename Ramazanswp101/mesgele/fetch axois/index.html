@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch axios</title>
+</head>
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+            axios.get("https://northwind.vercel.app/api/categories")
+    .then(res => {
+        console.log(res.data);
+    })
+    function data() {
+        axios.post("https://northwind.vercel.app/api/categories", {
+        name:"Ramazan" ,
+        surname:"ikiside hazir"
+    }).then(res => {
+        console.log('atildi', res.data);
+    })
+    }
+    function deleteItem(id) {
+        axios.delete(`https://northwind.vercel.app/api/categories/${id}`)
+    }
+        // fetch("https://northwind.vercel.app/api/categories")
+        // .then(res => res.json())
+        // .then(data => {
+        //     console.log(data);
+        // })
+        // function sendData() {
+        //     fetch("https://northwind.vercel.app/api/categories", {
+        //         method:"POST",
+        //         headers: {
+        //             "Content-type": "application/json",
+        //         },
+        //         body: JSON.stringify({
+        //             name:"Ramazan",
+        //             description:"Rahimli",
+        //             help:"Geti yazan var?"
+        //         }),
+        //     })
+        //     .then((res) => res.json())
+        //     .then((data) => {
+        //         console.log(data, "gonderildi");
+        //     });
+        // }
+        // function deleteData(id) {
+        //     fetch(`https://northwind.vercel.app/api/categories/${id}`, {
+        //         method: 'DELETE'
+        //     })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log('Silindi');
+        //     })
+        // }
+    </script>
+</body>
+</html>
+
+<!-- "https://northwind.vercel.app/api/categories" -->
